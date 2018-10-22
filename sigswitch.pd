@@ -1,0 +1,17 @@
+#N canvas 563 71 450 300 12;
+#X obj 31 42 inlet~;
+#X text 15 17 Signal input;
+#X obj 128 116 line~;
+#X obj 128 91 pack 0 20;
+#X obj 128 42 inlet;
+#X obj 128 72 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 125 17 Toggle;
+#X obj 113 141 *~;
+#X obj 31 183 outlet~;
+#X connect 0 0 7 0;
+#X connect 2 0 7 1;
+#X connect 3 0 2 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;
+#X connect 7 0 8 0;

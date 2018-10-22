@@ -1,0 +1,31 @@
+#N canvas 633 0 638 628 12;
+#X obj 33 33 inlet;
+#X obj 78 133 moses \$2;
+#X obj 33 90 moses \$1;
+#X text 38 110 < A;
+#X text 84 153 < B;
+#X text 130 153 >= B;
+#X text 94 26 Ex: ctrlbound 0 100 A = 0 \, B = 100;
+#X text 85 109 >= A;
+#X obj 33 213 f \$1;
+#X msg 33 239 \$1;
+#X obj 33 195 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 123 240 \$1;
+#X obj 123 196 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 123 214 f \$2;
+#X obj 33 324 outlet;
+#X floatatom 78 276 8 0 0 0 - - -, f 8;
+#X connect 0 0 2 0;
+#X connect 1 0 15 0;
+#X connect 1 1 12 0;
+#X connect 2 0 10 0;
+#X connect 2 1 1 0;
+#X connect 8 0 9 0;
+#X connect 9 0 15 0;
+#X connect 10 0 8 0;
+#X connect 11 0 15 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 0;
+#X connect 15 0 14 0;

@@ -1,0 +1,16 @@
+#N canvas 339 63 450 300 12;
+#X text 19 12 Frequency;
+#X msg 143 65 0;
+#X obj 32 35 inlet;
+#X obj 143 35 inlet;
+#X text 124 12 Phase reset;
+#X obj 32 108 phasor~;
+#X obj 32 134 *~ 2;
+#X obj 32 160 -~ 1;
+#X obj 32 186 outlet~;
+#X connect 1 0 5 1;
+#X connect 2 0 5 0;
+#X connect 3 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;

@@ -1,0 +1,37 @@
+#N canvas 443 153 450 300 12;
+#X obj 38 37 inlet;
+#X text 12 14 float to round;
+#X obj 38 259 outlet;
+#X obj 221 111 int;
+#X obj 194 136 -;
+#X obj 194 86 t f f;
+#X floatatom 194 162 5 0 0 0 - - -, f 5;
+#X text 230 132 extract just decimal portion, f 15;
+#X obj 194 188 moses 0.5;
+#X obj 53 164 int;
+#X obj 38 231 f;
+#X obj 38 63 t f f;
+#X text 81 150 first calculate possible output values, f 15;
+#X obj 68 231 f;
+#X obj 83 205 + 1;
+#X obj 194 214 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 245 214 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 11 0;
+#X connect 3 0 4 1;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 5 1 3 0;
+#X connect 6 0 8 0;
+#X connect 8 0 15 0;
+#X connect 8 1 16 0;
+#X connect 9 0 10 1;
+#X connect 9 0 14 0;
+#X connect 10 0 2 0;
+#X connect 11 0 5 0;
+#X connect 11 1 9 0;
+#X connect 13 0 2 0;
+#X connect 14 0 13 1;
+#X connect 15 0 10 0;
+#X connect 16 0 13 0;
